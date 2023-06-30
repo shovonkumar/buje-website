@@ -1,0 +1,596 @@
+/* ===== Universal CSS Start ===== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    vertical-align: middle;
+}
+h2, h3, h4, h5, h6 {
+    color: #3a424c;
+}
+button {
+    background: #ff6868;
+    color: #fff;
+    padding: 0.6rem 1.1rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+}
+button:hover {
+    background: #c74f4f
+}
+.section-title h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.icon i {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+    background: linear-gradient(#ff6868,#ff6868,#3d454f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.8rem;
+    border: 0.15rem solid #ff6868;
+    border-radius: 50%;
+}
+.icon i:hover {
+    background: linear-gradient(#ff6868,#ff6868,#3d454f);
+    -webkit-text-fill-color: #000;
+}
+section {
+    overflow: hidden !important;
+}
+/* ===== Universal CSS End ===== */
+
+
+/* ===== Navbar Part Start ===== */
+.navbar {
+    padding: 1.2rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #3a424c;
+    overflow: hidden;
+    transition: all 0.3s;
+    z-index: 99;
+    border-top: 2px solid #ff6868;
+}
+.navbar-brand img {
+    width: 60px;
+    height: auto;
+}
+.navbar-nav .nav-item {
+    margin-right: 0.4rem;
+}
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+.navbar-nav .nav-item .nav-link {
+    font-size: 0.90rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff6868;
+}
+@media (max-width :991px) {
+    .navbar-nav {
+        margin-top: 2rem;
+    }
+    .navbar-nav .nav-item .nav-link {
+        color: #3a424c;
+    }
+}
+/* ===== Navbar Part End ===== */
+
+
+/* ===== Banner Part Start ===== */
+.banner {
+    padding: 12rem 0 7.5rem 0;
+    background: url(../img/bannerImage.png) #38404a;
+    background-position: bottom 0 right -3rem;
+    background-repeat: no-repeat;
+}
+.banner h1 {
+    text-transform: uppercase;
+    font-size: 3.8rem;
+    font-weight: 800;
+    background: linear-gradient(#ff6868,#ff6868,#3d454f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner p {
+    width: 90%;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+.banner input,
+.news input {
+    width: 60%;
+    padding: 0.5rem 1.2rem;
+    background: #4a515b;
+    border: none;
+    color: #a2a2a2;
+    border-radius: 0.4rem;
+}
+.banner input::placeholder,
+.news input::placeholder {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    font-size: 0.8rem;
+}
+.banner button {
+    margin-left: 0.6rem;
+}
+.banner .icon i {
+    font-size: 1.1rem;
+}
+/* ===== Banner Part End ===== */
+
+
+/* ===== Service Part End ===== */
+.service {
+    padding: 4rem 0;
+}
+.service-item {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.service-item i {
+    display: inline-block;
+    font-size: 3rem;
+    color: #ff6868;
+    font-weight: 300;
+}
+.service-item h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.7rem;
+}
+.service-item p{
+    margin: 0;
+    font-size: 0.9rem;
+    color: #99a0a8;
+    font-weight: 300;
+}
+/* ===== Service Part End ===== */
+
+
+/* ===== Team Part Start ===== */
+.team {
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+    background: #38404a;
+}
+.team-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+.team-text h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0;
+    background: linear-gradient(#ff6868,#ff6868, #ff6868, #3d454f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.team-text h4 {
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+}
+.team-text p {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0.9rem;
+}
+.team .icon i {
+    padding: 0.55rem;
+    border: 0.1rem solid #ff6868;
+    font-size: 0.8rem;
+}
+.skill-wrapper {
+    width: 80%;
+}
+.skill {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.skill p {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.team .progress {
+    background: #4a515b;
+    height: 7px;
+}
+.team .progress-bar {
+    background: radial-gradient(#ff6868,#ff6868, #3d454f);
+}
+.team .swiper-pagination {
+    margin-top: 2rem !important;
+    position: unset;
+}
+.team .swiper-pagination-bullet-active {
+    background: #ff6868;
+}
+/* ===== Team Part End ===== */
+
+
+/* ===== App Part Start ===== */
+.app {
+    padding-top: 5rem ;
+    padding-bottom: 4rem;
+    background-image: url('../img/BUJE.png');
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 0;
+}
+@media (min-width: 1300px) {
+    .app {
+        background-image: url('../img/BUJE.png');
+        background-repeat: no-repeat;
+        background-position: bottom 0 right -10px;
+    }
+}
+.app-text h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    background: linear-gradient(#ff6868,#ff6868, #f2f2f2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.app-text p {
+    font-weight: 300;
+    color: #99a0a8;
+    font-size: 0.9rem;
+    margin: 1rem 0 1.5rem 0;
+    text-align: justify;
+}
+/* ===== App Part End ===== */
+
+
+/* ===== Portfolio Part Start ===== */
+.portfolio {
+    padding-top: 4rem;
+}
+.portfolio .filter {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+.portfolio button {
+    font-weight: 500;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid transparent;
+    background: transparent;
+    color: #3a424c;
+    font-size: 0.9rem;
+}
+.portfolio .filter .mixitup-control-active {
+    background: #ff6868;
+    color: #fff;
+}
+.portfolio button:hover {
+    color: #ff6868;
+    border-color: #ff6868;
+}
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+.portfolio-image img {
+    height: 100%;
+}
+.portfolio-image:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: rgba(0, 0, 0, 0.712);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.2s;
+    overflow: hidden;
+}
+.overlay h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(#ff6868,#ff6868,#ff6868,#3d454f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+.overlay a i {
+    display: inline-block;
+    background: linear-gradient(#ff6868,#ff6868,#ff6868,#3d454f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+/* ===== Portfolio Part End ===== */
+
+
+/* ===== Client Part Start ===== */
+.client {
+    border-top: 2px solid #ff6868;
+    padding: 2.5rem 0;
+    background: #38404a;
+}
+/* ===== Client Part End ===== */
+
+
+
+/* ===== Blog Part Start ===== */
+.blog {
+    padding: 4rem 0;
+}
+.blog-content {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+}
+.blog-content:hover h3 {
+    background: linear-gradient(#ff6868,#ff6868, #ff6868, #3d454f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.blog-text h3 {
+    text-transform: uppercase;
+    color: #3a424c;
+    font-weight: 800;
+    font-size: 1.35rem;
+    margin-bottom: 0;
+}
+.blog-text .date {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: rgb(196, 196, 196);
+}
+.blog-text .hidden {
+    display: none;
+}
+.blog-text p {
+    font-size: 0.9rem;
+    color: #99a0a8;
+    margin: 0;
+    margin-top: 1rem;
+}
+/* ===== Blog Part End ===== */
+
+
+/* ===== News Part Start ===== */
+.news {
+    padding: 3.3rem 0;
+    background: url(../img/news.png) #38404a;
+    background-position: top 15px right 1rem;
+    background-repeat: no-repeat;
+}
+.news h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    background: linear-gradient(#ff6868,#ff6868, #3d454f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+.news p {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+/* ===== News Part End ===== */
+
+
+/* ===== Pricing Part Start ===== */
+.pricing {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+.price-wrapper {
+    margin-top: 2.5rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 1rem;
+}
+.price-title {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background: #3a424c;
+    padding: 1.75rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-title h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+    background: linear-gradient(#ff6868,#ff6868, #3d454f);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    line-height: 1;
+}
+.price-title span {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #a2a2a2;
+}
+.price-title p {
+    color: #ff6868;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.price-body {
+    padding: 2rem 1rem;
+}
+.price-body ul {
+    list-style: none;
+    overflow: hidden;
+}
+.price-body ul li {
+    color: #99a0a8;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+.price-body ul li::before {
+    position: absolute;
+    left: -30px;
+    top: 3px;
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height:18px;
+    background-image: url('../img/list.png'); 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+}
+.price-body .price-btn {
+    width: 100%;
+    margin-top: 2rem;
+}
+/* ===== Pricing Part End ===== */
+
+
+/* ===== Post Part Start ===== */
+.post {
+    padding: 4rem 0;
+    background: #38404a;
+}
+.post .post-title {
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 75%;
+    margin: 0 auto;
+}
+.post p {
+    color: #fff;
+    margin-top: 10px;
+}
+.post p span {
+    color: #99a0a8;
+    font-weight: 300;
+}
+.post .icon i {
+    background: linear-gradient(#ff6868,#ff6868,#3d454f);
+    border: none;
+    -webkit-text-fill-color: #000;
+}
+/* ===== Post Part End ===== */
+
+
+/* ===== Contact Part Start ===== */
+.contact {
+    padding: 4rem 0;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 32%;
+    padding: 0.65rem 1.25rem;
+    background: #f5f7f9;
+    border: none;
+    color: #a2a2a2;
+    border-radius: 0.3rem;
+    font-size: 0.75rem;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    font-size: 0.75rem;
+}
+.contact-form textarea {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    height: 250px;
+}
+/* ===== Contact Part End ===== */
+
+
+/* ===== Footer Part Start ===== */
+.footer {
+    padding: 4rem 0;
+    background: #38404a;
+}
+.footer p{
+    color: #99a0a8;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.footer span {
+    color: #ff6868;
+}
+.footer p::before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 0.09rem;
+    background: #99a0a8;
+    margin-bottom: 5px;
+}
+/* ===== Footer Part End ===== */
